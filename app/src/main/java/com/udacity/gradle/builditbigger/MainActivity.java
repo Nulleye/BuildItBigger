@@ -1,19 +1,22 @@
 package com.udacity.gradle.builditbigger;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    MyMainActivityFragment myFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        android.support.v4.app.FragmentManager fm = getSupportFragmentManager();
+        myFragment = (MyMainActivityFragment) fm.findFragmentById(R.id.fragment);
     }
 
 
@@ -39,9 +42,8 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view){
-        Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
+    public void tellJoke(View view) {
+        myFragment.tellJoke(view);
     }
-
 
 }

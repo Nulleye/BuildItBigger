@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JokeAndroidLib</string>
+    <string name="title_activity_joke">JokeActivity</string>
+    <string name="no_joke_text">No joke text has been specified!</string>
+</resources>
