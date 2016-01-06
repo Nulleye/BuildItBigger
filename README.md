@@ -1,4 +1,13 @@
-# Gradle for Android and Java Final Project
+# Build It Bigger
+
+**Udacity Android nDegree - Project 4**  
+This project is part of the Udacity Android online Nano-Degree co-created by Google.
+
+It has been built from scratch and requires the courses **Gradle for Andorid and Java** and **Google Play Services**.
+
+*[Udacity's project text]*
+
+## Gradle for Android and Java Final Project  
 
 In this project, you will create an app with multiple flavors that uses
 multiple libraries and Google Could Endpoints. The finished app will consist
